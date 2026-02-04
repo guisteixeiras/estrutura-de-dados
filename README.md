@@ -1,2 +1,2 @@
-Atividades da aula 1 
-Guilherme
+# estrutura-de-dados
+Atividades da disciplina
