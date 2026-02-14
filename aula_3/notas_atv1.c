@@ -1,3 +1,10 @@
+/*Atividade 1 – Gerenciamento de Notas com Vetor
+Desenvolva um programa em C que utilize um array de números reais para armazenar as notas de
+uma turma. O programa deve permitir inserir notas no vetor até um tamanho máximo definido,
+remover uma nota informando a posição e atualizar uma nota existente. Após cada operação, o
+vetor deve permanecer compacto, sem espaços vazios. O sistema deve exibir todas as notas
+cadastradas, a média da turma, a maior e a menor nota.*/
+
 #include <stdio.h>
 
 #define MAX 50
@@ -113,3 +120,4 @@ int main() {
     return 0;
 }
 
+//guilherme teixeira soares souza
