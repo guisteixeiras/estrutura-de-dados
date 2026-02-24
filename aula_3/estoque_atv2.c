@@ -174,7 +174,7 @@ int main () {
             printf("Você escolheu sair, encerrando programa...\n");
             break;
         
-         default:
+        default:
             printf("Opcao invalida.\n");
         }
 
