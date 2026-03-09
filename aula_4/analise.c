@@ -7,7 +7,7 @@ int buscaBinaria(int v[], int n, int x)
 
     while (ini <= fim)
     {
-        int meio = (ini + fim) / 2; // Divide a busca pela metade
+        int meio = (ini + fim) / 2; 
         if (v[meio] == x)
             return meio;
         else if (v[meio] < x)

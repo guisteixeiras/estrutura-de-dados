@@ -140,7 +140,7 @@ int main () {
             //deslocamento dos vetores
             for (int i = indice; i < total - 1; i++) { //comeca no indice (ali ficou um "buraco")
                 codigo[i] = codigo[i + 1]; // codigo antigo recebe o codigo da frente
-                strcpy(nomes[i], nomes[i + 1]); // nome antigo recebe o codigo da frente
+                strcpy(nomes[i], nomes[i + 1]); // nome antigo recebe o nome da frente
                 quantidade[i] = quantidade[i + 1]; // quantidade antigo recebe o codigo da frente
             } //quando rodar as outras vezes, os valores vão se deslocando até percorrer todo o vetor
 

@@ -20,7 +20,7 @@ Turma cadastrarTurma () { // função cadastrar a turka
 
 void inserirAluno(Turma *turmax) { // void nn retorna, * ponteiro  
 
-    if (turmax->quant_alunos >= max_alunos) {  //a seta "verifica" o valor da variavel 
+    if (turmaxquant_alun->os >= max_alunos) {  //a seta "verifica" o valor da variavel 
         printf("Turma cheia.");
         return;
     }
