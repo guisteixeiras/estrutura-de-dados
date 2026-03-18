@@ -14,7 +14,7 @@ int main () {
             printf("%d ", matriz_identidade[i][j]);
         }
         printf("\n");
-    }
+    } 
 }
 
 
