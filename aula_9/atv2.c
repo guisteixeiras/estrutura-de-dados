@@ -16,10 +16,21 @@ int main() {
     int tam;
 
     printf("Qual o tamanho inteiro do vetor: ");
-    scanf("%d", tam);
+    scanf("%d", &tam);
 
     int *numeros = (int *)calloc(tam, sizeof(int));
 
+    printf("\nVetor apos a alocacao: ");
+        for (int i = 0; i < tam; i++) {
+        printf("%d ", numeros[i]);
+    }
+
+    for (int i = 0; i < tam; i++){
+        printf("\nDigite o valor da posicao %d:", i);
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("Vetor pos alocacao de novos valores: ");
     for (int i = 0; i < tam; i++){
         printf("%d", numeros[i]);
     }
