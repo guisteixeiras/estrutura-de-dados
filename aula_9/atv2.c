@@ -18,23 +18,23 @@ int main() {
     printf("Qual o tamanho inteiro do vetor: ");
     scanf("%d", &tam);
 
-    int *numeros = (int *)calloc(tam, sizeof(int));
+    int *numeros = (int *)calloc(tam, sizeof(int)); //aloca a memoria 
 
-    printf("\nVetor apos a alocacao: ");
+    printf("\nVetor apos a alocacao: "); // imprime vetor "vazio"
         for (int i = 0; i < tam; i++) {
         printf("%d ", numeros[i]);
     }
 
     for (int i = 0; i < tam; i++){
         printf("\nDigite o valor da posicao %d:", i);
-        scanf("%d", &numeros[i]);
+        scanf("%d", &numeros[i]); //preenchendo vetor
     }
 
     printf("Vetor pos alocacao de novos valores: ");
     for (int i = 0; i < tam; i++){
-        printf("%d", numeros[i]);
+        printf("%d", numeros[i]); //vetor preenchido
     }
 
-    free(numeros);
+    free(numeros); //libera memória
     numeros = NULL;
 }

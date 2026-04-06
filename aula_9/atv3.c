@@ -19,33 +19,35 @@ int main () {
     int tamL, tamC;
 
     printf("Valor de L: ");
-    scanf("%d", &tamL);
+    scanf("%d", &tamL); //quant de linhas
 
     printf("Valor de C: ");
-    scanf("%d", &tamC);
+    scanf("%d", &tamC); //quant de colunas
 
     int **matriz = (int **)malloc(tamL * sizeof(int *)); //vetor de ponteiros (linhas)
     
     for (int i = 0; i < tamL; i++){
-        matriz[i] = malloc(tamC * sizeof(int));
+        matriz[i] = malloc(tamC * sizeof(int)); //para cada linha, aloca memória para a coluna
+    } //cada matriz[i] passa a apontar para um vetor de inteiros com tamC de posições
 
-        
-    }
-
-    for(int i = 0; i < tamL; i++){
+    for(int i = 0; i < tamL; i++){ //preenche a matriz
         for(int j = 0; j < tamC; j++){
             printf("Digite o valor da posição [%d][%d] ", i, j);
             scanf("%d", &matriz[i][j]);
         }
     }
 
-    for(int i = 0; i < tamL; i++){
+    for(int i = 0; i < tamL; i++){ //soma as linhas da matriz
         int soma = 0;
 
-        for(int j = 0; j < tamC; j++){
+        for(int j = 0; j < tamC; j++){ 
             soma += matriz[i][j];
         }
     printf("Soma da linha %d = %d\n", i, soma);
     }
+    return 0;
 
+    free(matriz); //libera memória
+    matriz = NULL;
 }
+
