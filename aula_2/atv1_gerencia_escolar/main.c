@@ -60,7 +60,7 @@ int main() {
                 scanf("%d", &indice);
 
                 if (indice >= 0 && indice < quantidadeTurmas) { //verifica se o indice é válido  
-                    listarAlunos(turmas[indice]); //passa o endereço da turma escolkhida e a função lista os alunos
+                    listarAlunos(&turmas[indice]); //passa o endereço da turma escolkhida e a função lista os alunos
                 } else {
                     printf("Indice invalido.\n");
                 }

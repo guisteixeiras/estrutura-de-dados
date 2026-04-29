@@ -4,7 +4,7 @@
 
 typedef struct { // estrutura turma
     int codigo; // codigo da turma
-    char nome[50]; // nome do aluno
+    char nome[50]; // nome da turma
     int quant_alunos; // quantidade de alunos
     Aluno alunos[15]; // vetor de ESTRUTURA do TIPO aluno, cada espaço do vetor tem 1 estrutura) 
 } Turma;

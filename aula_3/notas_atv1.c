@@ -42,7 +42,7 @@ int main() {
         
             case 2: 
                 if (quantidade > 0) {
-                    printf("Qual o índice da nota que desekja remover? ");
+                    printf("Qual o índice da nota que deseja remover? ");
                     scanf("%d", &posicao);
 
                     if (posicao >= 0 && posicao <quantidade) {
