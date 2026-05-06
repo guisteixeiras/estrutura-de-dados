@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include "cliente.h"
 #include "fila.h"
-#include "cliente.h"
 
 void inicializar(Fila *f) {
     f->tamanho = 0;
@@ -33,8 +33,22 @@ void atenderCliente(Fila *f) {
         printf("Fila vazia!");
         return;
     }
-
-
-
+    f->inicio = (f->inicio + 1) % MAX;
+    f->tamanho-= 1;
 }
 
+void exibirFila(Fila *f) {
+    for (int i = 0; i < f->tamanho; i++ ){
+        int idx = (f->inicio + i) % MAX;
+        printf("ID: %d - Tempo: %d min\n", f->clientes[idx].id, f->clientes[idx].tempo_atendimento);
+    }
+}
+
+int calcularTempoEspera(Fila *f) {
+    int total = 0;
+    for (int i = 0; i < f->tamanho; i++ ){
+        int idx = (f->inicio + i) % MAX;
+        total += f->clientes[idx].tempo_atendimento;
+    }
+    return total;
+}
