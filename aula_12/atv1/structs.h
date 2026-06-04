@@ -1,5 +1,5 @@
-#ifndef PILHA_H
-#define PILHA_H
+#ifndef STRUCTS_H
+#define STRUCTS_H
 
 struct Elemento
 {
