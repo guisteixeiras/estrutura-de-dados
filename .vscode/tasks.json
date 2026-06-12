@@ -5,18 +5,19 @@
             "label": "C/C++: gcc.exe build active file",
             "command": "C:/MinGW/bin/gcc.exe",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
+                "-Wall",
+                "-Wextra", 
+                "-g3",
+                "${fileDirname}/*.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/output/main.exe"
             ],
             "options": {
-                "cwd": "C:/MinGW/bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
-            ],
+            ], 
             "group": {
                 "kind": "build",
                 "isDefault": true
